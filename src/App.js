@@ -1,10 +1,14 @@
+import { Provider } from 'react-redux';
 import './App.css';
+import store from './Redux/store';
 import CryptoListHome from './Component/CryptoListHome';
 
 function App() {
   return (
     <>
-      <CryptoListHome />
+      <Provider store={store}>
+        <CryptoListHome />
+      </Provider>
     </>
   );
 }

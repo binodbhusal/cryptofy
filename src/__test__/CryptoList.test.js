@@ -1,17 +1,17 @@
 import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router-dom';
 import { render } from '@testing-library/react';
-import Cryptolist from '../__MockTest__/CryptoList';
-import store from '../__MockTest__/mockstore';
+import Cryptolist from '../Component/CryptoList';
+import store from '../Redux/store';
 
 describe('CryptoList component render', () => {
   test('Test render of Cryptolist component', () => {
     const { container } = render(
-      <MemoryRouter>
-        <Provider store={store}>
+      <Provider store={store}>
+        <MemoryRouter>
           <Cryptolist />
-        </Provider>
-      </MemoryRouter>,
+        </MemoryRouter>
+      </Provider>,
     );
     expect(container).toMatchSnapshot();
   });
