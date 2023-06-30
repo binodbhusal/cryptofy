@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Crypto Item component renders crypto item and handle expand details button 1`] = `
+<p>
+  Binance
+</p>
+`;

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CryptoDetailList component renders the selected crypto detail 1`] = `
+<div>
+  <p>
+    Loading...
+  </p>
+</div>
+`;
