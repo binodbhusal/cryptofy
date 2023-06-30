@@ -58,8 +58,7 @@
 - Favicon Integration: Display the favicon of each exchange, retrieved from their website URL.
 - Responsive Design: Ensure the application is responsive and works seamlessly across different screen sizes, providing an optimal user experience on both desktop and mobile devices.
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-> Comming soon
+[ Live Demo Link](https://cryptofy.onrender.com/)
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
@@ -129,8 +128,9 @@ Everybody is welcome to suggest changes.
 In order to do it, fork this repository, create a new branch and open a Pull Request from your branch
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thanks [Creative Commons](https://creativecommons.org/licenses/by-nc/4.0/)
+I would like to thanks 
+[Nelson Sakwa ](https://creativecommons.org/licenses/by-nc/4.0/)for the website design system that inspired my design.
+[Coincap API]( https://api.coincap.io/v2/exchanges/') for the amazing API.
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE.md) licensed.

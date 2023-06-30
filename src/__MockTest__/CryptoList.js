@@ -25,8 +25,11 @@ const Cryptolist = () => {
     return <p>Something went wrong</p>;
   }
 
-  // eslint-disable-next-line max-len
-  const filteredCryptos = cryptos.filter((crypto) => crypto.name.toLowerCase().includes(filter.toLowerCase()));
+  const filteredCryptos = cryptos.filter((crypto) => {
+    const cryptoName = crypto.name.toLowerCase();
+    const filterText = filter.toLowerCase();
+    return cryptoName.includes(filterText);
+  });
 
   return (
     <>
