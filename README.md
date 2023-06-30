@@ -22,6 +22,8 @@
 - [🙏 Acknowledgements](#acknowledgements)
 
 - [📝 License](#license)
+
+  
 ![](https://github.com/binodbhusal/cryptofy/blob/dev/cryptoresize.gif)
 
 # 📖  React project - Book Store <a name="about-project"></a>
