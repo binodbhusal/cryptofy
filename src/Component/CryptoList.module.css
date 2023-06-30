@@ -2,6 +2,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  background-color: #df4783;
 }
 
 @media (max-width: 576px) {
