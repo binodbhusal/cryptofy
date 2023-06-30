@@ -1,5 +1,5 @@
 import './App.css';
-import CryptoListHome from './route/CryptoListHome';
+import CryptoListHome from './Component/CryptoListHome';
 
 function App() {
   return (

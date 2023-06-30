@@ -6,4 +6,5 @@ const store = configureStore({
     crypto: cryptoReducer,
   },
 });
+
 export default store;
