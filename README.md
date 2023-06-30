@@ -22,7 +22,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 
 - [📝 License](#license)
-![](https://github.com/binodbhusal/cryptofy/blob/dev/Recording%202023-06-30%20at%2017.54.07.gif)
+![](https://github.com/binodbhusal/cryptofy/blob/dev/cryptofuGIF.gif)
 
 # 📖  React project - Book Store <a name="about-project"></a>
 
