@@ -1,0 +1,92 @@
+
+.aboutlink {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+  right: 7%;
+  top: 2%;
+  color: #ececec;
+}
+
+.about {
+  width: 60%;
+  margin: auto;
+  padding-top: 5%;
+  color: #ececec;
+  font-family: 'Poppins', sans-serif;
+}
+
+.aboutlist > li {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  color: #ececec;
+}
+
+.backBtn {
+  width: 10%;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  left: -1%;
+  top: 7%;
+}
+
+.myform {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: auto;
+  padding: 9.25% 0;
+}
+
+.myform input,
+textarea {
+  outline: none;
+  padding: 1% 0;
+  border: none;
+  margin-bottom: 2%;
+  border-radius: 0.5em;
+  font-size: 0.9em;
+}
+
+.myform input,
+textarea ::placeholder {
+  padding-left: 2%;
+}
+
+.myform > button {
+  width: 25%;
+  padding: 1% 0;
+  background-color: #dd4883;
+  color: #ececec;
+  border: 1px solid #ececec;
+  border-radius: 0.5em;
+  transition: 0.4s ease-in-out;
+  margin-top: 2%;
+}
+
+.myform > button:hover {
+  background-color: #ececec;
+  color: #dd4883;
+}
+
+.myform .infoform {
+  color: #ececec;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1em;
+}
+
+.myform .textarr {
+  padding: 1% 2%;
+  font-size: 0.9em;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.about > h4 {
+  color: #ffd93d;
+}
