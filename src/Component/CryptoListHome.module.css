@@ -1,23 +1,57 @@
 
 body {
   background-color: #df4783;
+  text-decoration: none;
 }
 
 header {
   background-color: #df4783;
   width: 100%;
+  display: flex;
+  align-items: center;
   max-width: 100%;
   padding: 0.2em 0.2em;
   font-family: 'Acme', cursive;
 }
 
 .cryptofy {
-  color: #fff;
+  color: #ffd93d;
   font-size: 1.3em;
+  letter-spacing: 0.1em;
 }
 
 .incocontainer {
   position: absolute;
   right: 2%;
   top: 2%;
+  cursor: pointer;
+}
+
+.aboutlink {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .aboutlink {
+    display: block;
+    position: absolute;
+    right: 0.11%;
+    top: 2%;
+    padding-left: 5%;
+    width: 25%;
+    font-size: 1.1em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+  }
+
+  .aboutlink a {
+    text-decoration: none !important;
+    color: #ececec;
+    margin-right: 15%;
+    transition: 0.3s ease-in-out;
+  }
+
+  .aboutlink a:hover {
+    color: #ffd93d;
+  }
 }

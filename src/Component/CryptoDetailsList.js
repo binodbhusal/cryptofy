@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { fetchCryptoData } from '../Redux/CryptoSlice';
 import CryptoDetail from './CryptoDetails';
+import styles from './CryptoDetails.module.css';
 
 const CryptoDetailList = () => {
   const dispatch = useDispatch();
@@ -28,7 +29,7 @@ const CryptoDetailList = () => {
     <>
       {selectedCrypto && (
 
-      <ul>
+      <ul className={styles.uldetails}>
 
         <CryptoDetail key={selectedCrypto.exchangeId} cryptoData={selectedCrypto} />
 

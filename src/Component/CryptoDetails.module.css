@@ -29,27 +29,6 @@ ul > li {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-ul > li > .liText {
-  font-size: 1.3em;
-  font-family: 'Lato', sans-serif;
-  font-weight: 600;
-  margin-left: 2%;
-}
-
-ul > li :nth-child(odd) {
-  background-color: #dd4883;
-  border: none;
-  padding: 4.7% 0;
-  margin-bottom: -10px;
-}
-
-ul > li :nth-child(even) {
-  background-color: #ce4177;
-  border: none;
-  padding: 5.7% 0;
-  margin-bottom: -10px;
-}
-
 .backBtn {
   width: 10%;
   background-color: transparent;
@@ -67,14 +46,39 @@ ul > li :nth-child(even) {
   background-color: #df4783;
 }
 
+table {
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  table-layout: fixed;
+}
+
+td {
+  text-indent: 10px;
+  word-break: break-all;
+}
+
+tr:nth-child(even) {
+  background-color: #fd5294;
+}
+
 @media (min-width: 576px) {
   ul {
     width: 100%;
     background-color: #df4783;
+    padding-bottom: 11.2%;
   }
 
-  ul > li {
-    max-width: 60%;
+  td {
+    text-indent: 40px;
+  }
+
+  table {
+    font-size: 1.1em;
+  }
+
+  .uldetails > li {
+    width: 60%;
     margin: 0 auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 0 0;
@@ -83,25 +87,6 @@ ul > li :nth-child(even) {
   .headname {
     margin-bottom: 5%;
     padding: 0.6em 1em;
-  }
-
-  ul > li > .liText {
-    font-size: 1.3em;
-    font-family: 'Lato', sans-serif;
-    font-weight: 600;
-    width: 100%;
-  }
-
-  ul > li :nth-child(odd) {
-    background-color: #dd4883;
-    border: none;
-    padding: 2%  0;
-  }
-
-  ul > li :nth-child(even) {
-    background-color: #ce4177;
-    border: none;
-    padding: 2% 0;
   }
 
   .headrmain {
