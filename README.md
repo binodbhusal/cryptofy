@@ -25,7 +25,7 @@
 
 
   
-![](https://github.com/binodbhusal/cryptofy/blob/dev/cryptoresize.gif)
+![](https://github.com/binodbhusal/cryptofy/blob/dev/cryptoscreen.gif)
 
 # 📖  React project - Book Store <a name="about-project"></a>
 
