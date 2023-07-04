@@ -2,8 +2,9 @@
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #dd4883;
-  color: #fff;
+  color: #ececec;
   font-family: 'Poppins', sans-serif;
+  transition: 0.4s ease-in-out;
 }
 
 .card:nth-child(4n+2),
@@ -29,4 +30,27 @@
   top: -20%;
   margin-left: 80%;
   width: 12%;
+}
+
+.arrowCircle {
+  font-size: 1.5em;
+  color: #d3d3d3;
+  transition: 0.4s ease-in-out;
+}
+
+.arrowCircle:hover {
+  color: #ffd93d;
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.4s ease-in-out;
+}
+
+@media (min-width: 576px) {
+  .card {
+    border-radius: 1.25rem;
+  }
 }

@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useNavigate } from 'react-router-dom';
 import styles from './CryptoDetails.module.css';
+import BackBtn from './BackBtn';
 
 const CryptoDetail = ({ cryptoData }) => {
-  const navigate = useNavigate();
   const {
     name, rank, volumeUsd, exchangeUrl, percentTotalVolume, tradingPairs, updated,
   } = cryptoData;
@@ -14,63 +13,84 @@ const CryptoDetail = ({ cryptoData }) => {
   const formatdPairVolume = Number(tradingPairs).toFixed(2);
   const formattedUpdated = new Date(updated).toLocaleDateString();
 
-  const handleBackHomeClick = () => {
-    navigate('/');
-  };
   return (
     <>
       <header className={styles.headname}>
-        <button type="button" onClick={handleBackHomeClick} className={styles.backBtn}>
-          <img width="35" height="35" src="https://img.icons8.com/ios/40/ffffff/less-than.png" alt="less-than" />
-        </button>
+        {' '}
+        <BackBtn />
         <div className={styles.itemcontainer}>
-          <h4>
-            {name}
-            {' '}
-            #
-            {' '}
-            {rank}
-          </h4>
+          <h5>EXCHANGE DETAILS</h5>
           {' '}
 
         </div>
 
       </header>
       <header className={styles.headrmain}>
-        <h5>DETAILS</h5>
+
+        <h4>
+          {name}
+          {' '}
+          #
+          {' '}
+          {rank}
+        </h4>
         {' '}
       </header>
 
       <li>
-        <p className={styles.liText}>
-          Trading volume %:
-          {' '}
-          {formatdpercentVolume }
-        </p>
-        <p className={styles.liText}>
-          Trading Volume:
-          $
-          {' '}
-          {formatdVolumeUsd}
-        </p>
-        <p className={styles.liText}>
-          Number of Trading pairs:
-          {' '}
-          {formatdPairVolume}
-        </p>
-        <p className={styles.liText}>
-          Last Update:
-          {' '}
-          {formattedUpdated}
-        </p>
-        <p className={styles.liText}>
-          Website:
-          <a href={exchangeUrl}>
-            {' '}
-            {exchangeUrl}
-          </a>
+        <table cellPadding={6}>
+          <tr>
+            <td>
+              Trading volume %:
 
-        </p>
+            </td>
+            <td>
+              {formatdpercentVolume }
+              {' '}
+              %
+
+            </td>
+
+          </tr>
+          <tr>
+            <td>
+              Trading Volume $:
+            </td>
+            <td>
+              $
+              {' '}
+              {formatdVolumeUsd}
+
+            </td>
+
+          </tr>
+          <tr>
+            <td>
+              Trading pairs:
+            </td>
+            <td className={styles.pDetails}>{formatdPairVolume}</td>
+
+          </tr>
+          <tr>
+            <td className={styles.liText}>
+              Last Update:
+            </td>
+            <td>{formattedUpdated}</td>
+          </tr>
+          <tr>
+            <td>
+              Website:
+
+            </td>
+            <td>
+              <a href={exchangeUrl}>
+
+                {exchangeUrl}
+              </a>
+
+            </td>
+          </tr>
+        </table>
       </li>
     </>
   );

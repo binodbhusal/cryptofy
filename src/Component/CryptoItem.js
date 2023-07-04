@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { BsArrowRightCircle } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
 
 import styles from './CryptoItem.module.css';
@@ -26,7 +27,8 @@ const CryptoItem = ({ cryptoData }) => {
       {' '}
       <img src={faviconUrl} alt={`${name}`} style={{ width: '20%', padding: '0 8px', marginTop: '10%' }} />
       <button type="button" onClick={handleExpandClick} className={styles.expandBtn}>
-        <img width="25" height="25" src="https://img.icons8.com/ios/25/ffffff/circled-right-2.png" alt="circled-right-2" />
+        <BsArrowRightCircle className={styles.arrowCircle} />
+        {' '}
       </button>
       <div className={styles.content}>
         <h5>{name}</h5>

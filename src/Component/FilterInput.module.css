@@ -1,20 +1,62 @@
 .filterinput {
-  border-radius: 1.5em;
-  width: 85%;
-  max-width: 100%;
-  outline: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
   border: none;
-  margin: 18% 7%;
-  padding: 0.6em 1em;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
 }
 
-.FilterInputcontainer {
-  background-color: #fd5294;
+.excHeader {
+  color: #ececec;
+  padding: 0.7% 0.7%;
+  width: 95%;
+  margin: auto;
+}
+
+.excHeader h5 {
+  margin: auto 0 auto 0;
+}
+
+.searchWraper {
+  border-radius: 1.5em;
+  padding: 0.8em 1em;
+  display: flex;
+  align-items: center;
+  width: 85%;
+  max-width: 100%;
+  margin: 18% 7%;
+  font-size: 1.07em;
+  background-color: #ececec;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.searchWraper:hover {
+  transform: scale(1.01);
+  transition: 0.3s ease-in-out;
+}
+
+.fasearch {
+  font-size: 1.2em;
+  color: #df4783;
+  cursor: pointer;
 }
 
 @media (min-width: 576px) {
-  .filterinput {
-    margin: 5% 7%;
-    padding: 0.6em 1em;
+  .searchWraper {
+    padding: 0.7em 1em;
+    width: 50%;
+    margin: 4% 25%;
+    font-size: 1.06em;
+  }
+
+  .excHeader {
+    margin: 7% auto 0 auto;
+    border-radius: 8px;
+  }
+
+  .FilterInputcontainer {
+    padding-bottom: 1%;
   }
 }
