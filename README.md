@@ -27,7 +27,7 @@
   
 ![](https://github.com/binodbhusal/cryptofy/blob/dev/cryptoscreen2.gif)
 
-# 📖  React project - Book Store <a name="about-project"></a>
+# 📖  React project - CRYPTOFY <a name="about-project"></a>
 
 **CRYPTOFY**  This project is a web application that provides users with a comprehensive view of various cryptocurrency exchanges and their trading data. The dashboard allows users to browse and filter through a list of crypto exchanges, view exchange details, and access real-time trading information.
 
